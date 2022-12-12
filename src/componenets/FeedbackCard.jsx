@@ -13,7 +13,7 @@ export default function FeedbackCard({ el }) {
     } = useContext(FeedbackContext)
 
     //Delete Feedback
-    function handleDelete(id){
+    function handleDelete(){
       setFeedbackListArray(feedbackListArray.filter(item=>{
         return el.id !== item.id
       }))
